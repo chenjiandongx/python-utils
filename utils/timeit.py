@@ -16,12 +16,12 @@ def _green(string):
 def _format(unit='s', end=None, label=None):
     _end, _unit = "", ""
     if unit == 's':
-        _end, _unit = end, '秒'
+        _end, _unit = end, 'seconds'
     elif unit == 'm':
-        _end, _unit = end / 60, '分钟'
+        _end, _unit = end / 60, 'minutes'
     elif unit == 'h':
-        _end, _unit = end / 3600, '小时'
-    print(_green('{} 耗时: {} {}'.format(label, _end, _unit).lstrip()))
+        _end, _unit = end / 3600, 'hours'
+    print(_green('Total time running {}: {} {}'.format(label, _end, _unit)))
 
 
 @contextmanager
@@ -29,7 +29,7 @@ def timeit_block(unit='s', label=""):
     """
     测试代码块耗时
 
-    :param unit: 时间单位，有 's','m','h' 可选（秒，分，时）
+    :param unit: 时间单位，有 's','m','h' 可选（seconds，minutes，hours）
     :param label: 代码块标签
     """
     start = time.time()
@@ -43,7 +43,7 @@ def timeit_func(unit='s'):
     """
     测试函数耗时
 
-    :param unit: 时间单位，有 's','m','h' 可选（秒，分，时）
+    :param unit: 时间单位，有 's','m','h' 可选（seconds，minutes，hours）
     """
     def timer(func):
         @wraps(func)

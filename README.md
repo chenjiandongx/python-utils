@@ -11,7 +11,7 @@
 ```
 测试代码块时间
 
-:param unit: 时间单位，有 's','m','h' 可选（秒，分，时）
+:param unit: 时间单位，有 's','m','h' 可选（seconds，minutes，hours）
 :param label: 代码块标签
 
 > 用法
@@ -25,7 +25,7 @@ with timeit_block():
 ```
 测试函数耗时
 
-:param unit: 时间单位，有 's','m','h' 可选（秒，分，时）
+:param unit: 时间单位，有 's','m','h' 可选（seconds，minutes，hours）
 
 > 用法
 @timeit_func()
