@@ -37,8 +37,23 @@
         },
         {
             "location": "/misc/",
-            "text": "",
+            "text": "misc.py\n->\n\n\n\n\n\u5404\u79cd\u6742\u9879\u5de5\u5177\u51fd\u6570\n\n\n\n\nformat_cookies\n->\n\n\n\n\nformat_cookies(path)\n\n\n\n\n\u5c06 cookie \u5b57\u7b26\u4e32\u8f6c\u5316\u4e3a\u5b57\u5178\n\n\n\n\npath: cookies \u6587\u4ef6\u8def\u5f84\n\n\nreturn: cookies \u5b57\u5178\n\n\n\n\ndelete_empty_dir\n->\n\n\n\n\ndelete_empty_dir(directory)\n\n\n\n\n\u904d\u5386\u5220\u9664\u7a7a\u76ee\u5f55\n\n\n\n\ndirectory: \u76ee\u5f55\u8def\u5f84",
             "title": "Misc"
+        },
+        {
+            "location": "/misc/#miscpy",
+            "text": "\u5404\u79cd\u6742\u9879\u5de5\u5177\u51fd\u6570",
+            "title": "misc.py"
+        },
+        {
+            "location": "/misc/#format_cookies",
+            "text": "format_cookies(path)   \u5c06 cookie \u5b57\u7b26\u4e32\u8f6c\u5316\u4e3a\u5b57\u5178   path: cookies \u6587\u4ef6\u8def\u5f84  return: cookies \u5b57\u5178",
+            "title": "format_cookies"
+        },
+        {
+            "location": "/misc/#delete_empty_dir",
+            "text": "delete_empty_dir(directory)   \u904d\u5386\u5220\u9664\u7a7a\u76ee\u5f55   directory: \u76ee\u5f55\u8def\u5f84",
+            "title": "delete_empty_dir"
         },
         {
             "location": "/profileit/",
