@@ -8,7 +8,7 @@ from functools import wraps
 
 def profileit(field='cumulative'):
     """
-    测试函数耗时
+    测试函数运行消耗情况
 
     :param field: 输出内容排序方式。
         可选参数为 "stdname", "calls", "time", "cumulative"
@@ -21,6 +21,7 @@ def profileit(field='cumulative'):
             stats = Stats(pro)
             stats.strip_dirs()
             stats.sort_stats(field)
+            print("{}() Profile info".format(func.__name__))
             stats.print_stats()
             stats.print_callers()
         return inner

@@ -2,7 +2,7 @@
 
 此项目的目的是为了将平时用到的一些工具函数集合起来，方便使用
 
-### timeit.py
+## timeit.py
 > 用于测试代码运行时间
 
 #### 函数
@@ -32,7 +32,32 @@ with timeit_block():
 def test():
     for i in range(100000):
         i += 1
+
+test()
 ```
+
+
+## profileit.py
+> 用于测试函数运行消耗情况
+
+#### 函数
+
+**profileit(field='cumulative')**
+```
+测试函数运行消耗情况
+
+:param field: 输出内容排序方式。
+    可选参数为 "stdname", "calls", "time", "cumulative"
+
+> 用法
+@profileit()
+def test():
+    for i in range(100000):
+        i += 1
+
+test()
+```
+
 
 
 未完待续....
