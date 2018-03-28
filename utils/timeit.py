@@ -45,7 +45,7 @@ def timeit_func(unit='s'):
 
     :param unit: 时间单位，有 's','m','h' 可选（seconds，minutes，hours）
     """
-    def timer(func):
+    def wrapper(func):
         @wraps(func)
         def inner(*args, **kwargs):
             start = time.time()
@@ -53,4 +53,4 @@ def timeit_func(unit='s'):
             _format(unit, time.time() - start, func.__name__ + '()')
             return _result
         return inner
-    return timer
+    return wrapper
