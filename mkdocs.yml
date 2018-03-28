@@ -1,5 +1,5 @@
 site_name: Python-utils
-site_url: https://github.com/chenjiandongx
+site_url: http://chenjiandongx.com/python-utils/
 site_description: Python 实用工具函数
 site_author: chenjiandongx
 
@@ -20,6 +20,7 @@ theme:
   palette:
     primary: 'blue'
     accent: 'blue'
+  logo: './logo.png'
   social:
     - type: 'github'
       link: 'https://github.com/chenjiandongx'
