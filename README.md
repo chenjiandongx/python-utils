@@ -15,10 +15,12 @@
 :param label: 代码块标签
 
 > 用法
-
 with timeit_block():
     for i in range(100000):
         i += 1
+
+> 输出
+Total time running : 0.008527040481567383 seconds
 ```
 
 **timeit_func(unit='s')**
@@ -32,8 +34,10 @@ with timeit_block():
 def test():
     for i in range(100000):
         i += 1
-
 test()
+
+> 输出
+Total time running : 0.008527040481567383 seconds
 ```
 
 
@@ -54,8 +58,24 @@ test()
 def test():
     for i in range(100000):
         i += 1
-
 test()
+
+> 输出
+Profile info for test()
+         2 function calls in 0.004 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.004    0.004    0.004    0.004 profileit.py:30(test)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+
+   Ordered by: cumulative time
+
+Function                                          was called by...
+profileit.py:30(test)                             <-
+{method 'disable' of '_lsprof.Profiler' objects}  <-
 ```
 
 
@@ -72,14 +92,18 @@ test()
 :param limit: 限制输出行数
 
 > 用法
-
 @memoryit_func()
 def test():
     for i in range(100000):
         i += 1
-
 test()
 
+> 输出
+TraceMalloc for test()
+C:\Users\chenjiandongx\Anaconda3\lib\tracemalloc.py:387: size=536 B (+536 B), count=3 (+3), average=179 B
+D:/Python/python-utils/utils/memoryit.py:34: size=440 B (+440 B), count=1 (+1), average=440 B
+C:\Users\chenjiandongx\Anaconda3\lib\tracemalloc.py:524: size=56 B (+56 B), count=1 (+1), average=56 B
+C:\Users\chenjiandongx\Anaconda3\lib\tracemalloc.py:281: size=40 B (+40 B), count=1 (+1), average=40 B
 ```
 
 **memoryit_block(group_by='lineno', limit=10, label='code block')**
@@ -91,10 +115,16 @@ test()
 :param label: 代码块标签
 
 > 用法
-
 with memoryit_block():
     for i in range(100000):
         i += 1
+
+> 输出
+TraceMalloc for code block
+C:\Users\chenjiandongx\Anaconda3\lib\tracemalloc.py:387: size=608 B (+608 B), count=4 (+4), average=152 B
+D:/Python/python-utils/utils/memoryit.py:63: size=604 B (+604 B), count=2 (+2), average=302 B
+C:\Users\chenjiandongx\Anaconda3\lib\tracemalloc.py:524: size=504 B (+504 B), count=2 (+2), average=252 B
+C:\Users\chenjiandongx\Anaconda3\lib\tracemalloc.py:281: size=40 B (+40 B), count=1 (+1), average=40 B
 ```
 
 

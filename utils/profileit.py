@@ -21,7 +21,7 @@ def profileit(field='cumulative'):
             stats = Stats(pro)
             stats.strip_dirs()
             stats.sort_stats(field)
-            print("{}() Profile info".format(func.__name__))
+            print("Profile for {}()".format(func.__name__))
             stats.print_stats()
             stats.print_callers()
         return inner
