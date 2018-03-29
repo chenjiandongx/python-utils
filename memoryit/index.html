@@ -430,7 +430,9 @@
 <li>limit: 限制输出行数</li>
 </ul>
 <p>用法</p>
-<div class="codehilite"><pre><span></span><span class="nd">@memoryit</span><span class="p">()</span>
+<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">python_utils</span> <span class="kn">import</span> <span class="n">memoryit</span>
+
+<span class="nd">@memoryit.memoryit</span><span class="p">()</span>
 <span class="k">def</span> <span class="nf">test</span><span class="p">():</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100000</span><span class="p">):</span>
         <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
@@ -458,7 +460,10 @@ C:<span class="se">\U</span>sers<span class="se">\c</span>henjiandongx<span clas
 <li>label: 代码块标签</li>
 </ul>
 <p>用法</p>
-<div class="codehilite"><pre><span></span><span class="k">with</span> <span class="n">memoryit_block</span><span class="p">():</span>
+<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">python_utils</span> <span class="kn">import</span> <span class="n">memoryit</span>
+
+
+<span class="k">with</span> <span class="n">memoryit</span><span class="o">.</span><span class="n">memoryit_block</span><span class="p">():</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100000</span><span class="p">):</span>
         <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
 </pre></div>
