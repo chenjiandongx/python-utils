@@ -15,7 +15,9 @@
 
 用法
 ```python
-with timeit_block():
+from python_utils import timeit
+
+with timeit.timeit_block():
     for i in range(100000):
         i += 1
 ```
@@ -35,7 +37,9 @@ Total time running : 0.008527040481567383 seconds
 
 用法
 ```python
-@timeit_func()
+from python_utils import timeit
+
+@timeit.timeit()
 def test():
     for i in range(100000):
         i += 1

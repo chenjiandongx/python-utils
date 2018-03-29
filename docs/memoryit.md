@@ -12,7 +12,9 @@
 
 用法
 ```python
-@memoryit()
+from python_utils import memoryit
+
+@memoryit.memoryit()
 def test():
     for i in range(100000):
         i += 1
@@ -40,7 +42,10 @@ C:\Users\chenjiandongx\Anaconda3\lib\tracemalloc.py:281: size=40 B (+40 B), coun
 
 用法
 ```python
-with memoryit_block():
+from python_utils import memoryit
+
+
+with memoryit.memoryit_block():
     for i in range(100000):
         i += 1
 ```

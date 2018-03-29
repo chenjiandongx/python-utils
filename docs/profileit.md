@@ -12,7 +12,9 @@
 
 用法
 ```python
-@profileit()
+from python_utils import profileit
+
+@profileit.profileit()
 def test():
     for i in range(100000):
         i += 1
