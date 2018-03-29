@@ -19,7 +19,7 @@ def _print(stats, limit, label):
             break
 
 
-def memoryit_func(group_by='lineno', limit=10):
+def memoryit(group_by='lineno', limit=10):
     """
     追踪函数内存消耗情况
 

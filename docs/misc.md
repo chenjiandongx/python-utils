@@ -7,7 +7,7 @@
 
 *将 cookie 字符串转化为字典*
 
-* path: cookies 文件路径
+* path: cookies 文件路径，纯文本文件即可。
 * return: cookies 字典
 
 

@@ -2,8 +2,8 @@
 
 > 用于追踪代码内存消耗情况
 
-### memoryit_func
-> memoryit_func(group_by='lineno', limit=10)
+### memoryit
+> memoryit(group_by='lineno', limit=10)
 
 *追踪函数内存消耗情况*
 
@@ -12,7 +12,7 @@
 
 用法
 ```python
-@memoryit_func()
+@memoryit()
 def test():
     for i in range(100000):
         i += 1

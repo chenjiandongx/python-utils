@@ -39,7 +39,7 @@ def timeit_block(unit='s', label=""):
         _format(unit, time.time() - start, label)
 
 
-def timeit_func(unit='s'):
+def timeit(unit='s'):
     """
     测试函数耗时
 

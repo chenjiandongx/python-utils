@@ -25,9 +25,9 @@ with timeit_block():
 Total time running : 0.008527040481567383 seconds
 ```
 
-### timeit_func
+### timeit
 
-> timeit_func(unit='s')
+> timeit(unit='s')
 
 *测试函数耗时*
 
